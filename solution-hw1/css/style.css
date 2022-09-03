@@ -1,0 +1,124 @@
+.mainLogo {
+    cursor: pointer;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.pages {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+span {
+    font-family: sans-serif;
+}
+
+.menuImages {
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.menuBlock {
+    display: block;
+    width: 200px;
+    padding: 5px;
+    margin: auto;
+}
+
+.menuBlock:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+}
+
+.mainImage {
+    border: 2px solid black;
+    box-sizing: border-box;
+    display:block;
+    margin: auto;
+}
+
+#customizeText {
+    width: 200px;
+    line-break: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 200px;
+}
+
+#addToCartButton {
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    float: right;
+    cursor: pointer;
+}
+
+#totalPrice {
+    padding: 7px 0px 7px 0px;
+    float: left;
+}
+
+select {
+    width: 200px;
+}
+
+.finalItemImage {
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.removeItem {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.finalOrder {
+    text-align: center;
+}
+
+.cartTotalPrice {
+    font-size: 20px;
+    text-align: center;
+}
+
+#hr2 {
+    width: 600px;
+}
+
+#checkoutButton {
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+body {
+    margin-bottom: 200px;
+}
