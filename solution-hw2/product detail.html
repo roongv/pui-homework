@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Product Detail</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
   
   <body>
 
-    <a class="mainLogo" href="./index.html">
-      <img src="./images/logo-01.svg" width="200" alt="Bun Bun Bakeshop logo"/>
-    </a>
-    
-    <hr>
+    <!--HEADER-->
+    <div class="header">
+      <div class="logo">
+        <a class="mainLogo" href="./index.html">
+          <img src="./images/logo-01.svg" alt="Bun Bun Bakeshop logo"/>
+        </a>
+      </div>
+      <div class="overallNavBar">
+        <div class="navBar">
+          <div class="navBarButtons">
+            <a class="pages" href="./index.html">
+              <h3 id="productBackground2">PRODUCTS</h3>
+            </a>
+          </div>
+          
+          <div class="navBarButtons">
+            <a class="pages" href="./shopping cart.html">
+              <h3>CART</h3>
+            </a>
+          </div>
+          
+        </div>
+        <div class="navBarFooter">
+          <div>
+            <h1>Original cinnamon roll</h1>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--END OF HEADER-->
 
-    <a class="pages" href="./index.html">
-      <h3>PRODUCTS</h3>
-    </a>
-    
-    <a class="pages" href="./shopping cart.html">
-      <h3>CART</h3>
-    </a>
+    <br><br><br>
 
-    <br>
+    <!--CONTENT-->
+    <div class="productDetailFlexbox">
+      <div class="productDetailImage">
+        <img class="mainImage" src="./images/original-cinnamon-roll.jpeg" width="400" alt="Original cinnamon roll"/>
+      </div>
 
-    <h1>Original cinnamon roll</h1>
+      <div class="productDetailOptions">
+        <div id="customizeText">
+          <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+          <br>
+          <p>Glazing:</p>
+          <select>
+            <option value=""> </option>
+            <option value="Keep original">Keep original</option>
+            <option value="Sugar milk">Sugar milk</option>
+            <option value="Vanilla milk">Vanilla milk</option>
+            <option value="Double chocolate">Double chocolate</option>
+          </select>
 
-    <img class="mainImage" src="./images/original-cinnamon-roll.jpeg" width="400" alt="Original cinnamon roll"/>
-      <div id="customizeText">
-        <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
-        <br>
-        <p>Glazing:</p>
-        <select>
-          <option value=""> </option>
-          <option value="Keep original">Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
-        </select>
+          <p>Pack size:</p>
+          <select>
+            <option value=""> </option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+          </select>
 
-        <p>Pack size:</p>
-        <select>
-          <option value=""> </option>
-          <option value="1">1</option>
-          <option value="3">3</option>
-          <option value="6">6</option>
-          <option value="12">12</option>
-        </select>
+          <br>
+          <br>
+          <br>
+          <br>
 
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <span id="totalPrice"><b>$ 2.49</b></span>
-        <span id="addToCartButton"><b>Add to cart</b></span>
-
+          <span id="totalPrice"><b>$ 2.49</b></span>
+          <span id="addToCartButton"><b>Add to cart</b></span>
+        </div>
       </div>  
-  
+    </div>
+    
+      
 
   </body>
 </html>

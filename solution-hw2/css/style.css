@@ -2,6 +2,18 @@
     cursor: pointer;
 }
 
+#productBackground1 {
+    background-color: yellow;
+}
+
+#productBackground2 {
+    background-color: yellow;
+}
+
+#cartBackground {
+    background-color: yellow;
+}
+
 hr {
     border: 2px solid black;
 }
@@ -64,7 +76,6 @@ a {
     line-break: auto;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 200px;
 }
 
 #addToCartButton {
@@ -72,6 +83,7 @@ a {
     border: 2px solid black;
     float: right;
     cursor: pointer;
+    background-color: yellow;
 }
 
 #totalPrice {
@@ -93,13 +105,9 @@ select {
 .removeItem {
     font-size: 10px;
     font-weight: bold;
-    text-align: center;
     cursor: pointer;
 }
 
-.finalOrder {
-    text-align: center;
-}
 
 .cartTotalPrice {
     font-size: 20px;
@@ -114,8 +122,8 @@ select {
     padding: 5px 20px 5px 20px;
     border: 2px solid black;
     display: table;
-    margin: 0 auto;
     cursor: pointer;
+    background-color: yellow;
 }
 
 body {
@@ -133,6 +141,7 @@ body {
 .logo {
     object-fit: cover;
     width: 300px;
+    margin-right: 20px;
 }
 
 .overallNavBar {
@@ -170,4 +179,55 @@ body {
 
 .menuItem {
     width: 250px;
+}
+
+.productDetailFlexbox {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+}
+
+.productDetailOptions {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 50px;
+}
+
+/*------------------------------------ HW2 - CART PAGE --------------------------------------*/
+
+.mainCartFlexBox {
+    margin-left: 320px;
+}
+
+.cartItem {
+    display: flex;
+}
+
+#cartItemLast {
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+#cartTotalLine {
+    display: flex;
+}
+
+.cartItemDetails {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.cartItemPrice {
+    margin-right: 50px;
+}
+
+#cartTotalLabel {
+    margin-left: 120px;
+    flex-grow: 1;
+}
+
+#checkoutButtonLine {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
