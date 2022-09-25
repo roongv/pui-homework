@@ -86,6 +86,7 @@ p {
 .menuBlock {
     display: block;
     width: 270px;
+    height: 360px;
     margin: auto;
     padding: 5px;
 }
@@ -94,6 +95,10 @@ p {
     background-color: yellow;
     cursor: pointer;
     font-weight: bold;
+}
+
+.override {
+    font-weight: normal !important;
 }
 
 a {

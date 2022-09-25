@@ -37,6 +37,8 @@ let packOptions = [
 ];
 
 
+//------------------------- ADD GLAZING OPTIONS TO DROP DOWN MENU ----------------------------//
+
 let selectGlazing = document.querySelector("#glazingDropDownOptions");
 
 
@@ -47,6 +49,10 @@ for (let i = 0; i < glazingOptions.length; i++) {
     selectGlazing.add(option);
 }
 
+
+
+
+//------------------------- ADD PACK SIZE OPTIONS TO DROP DOWN MENU ----------------------------//
 
 let selectPack = document.querySelector("#packSizeDropDownOptions");
 
@@ -59,6 +65,9 @@ for (let i = 0; i < packOptions.length; i++) {
 }
 
 
+
+
+//------------------------- COMPUTE AND DISPLAY PRICES ----------------------------//
 
 let glazingForCompute = glazingOptions[0].price;
 let packForCompute = packOptions[0].multiplier;
