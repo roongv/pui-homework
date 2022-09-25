@@ -1,0 +1,268 @@
+/*------------------------------------ OVERALL HEADER --------------------------------------*/
+.mainLogo {
+    cursor: pointer;
+}
+
+.yellowBackgroundHover:hover {
+    font-weight: bolder;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.yellowBackground {
+    font-weight: bolder;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 28px;
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+
+/*------------ LAYOUT WITH FLEX BOX ------------*/
+
+.header {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.logo {
+    object-fit: cover;
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.overallNavBar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 5px solid black;
+}
+
+.navBarButtons {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarFooter {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+
+/*------------------------------------ GALLERY PAGE --------------------------------------*/
+
+p {
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.menuImages {
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.menuBlock {
+    display: block;
+    width: 270px;
+    margin: auto;
+    padding: 5px;
+}
+
+.menuBlock:hover {
+    background-color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a {
+    all: unset;
+}
+
+body {
+    margin-bottom: 200px;
+}
+
+
+/*------------ LAYOUT WITH FLEX BOX ------------*/
+
+#menuItemsTopRow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#menuItemsBottomRow {
+    display: flex;
+    justify-content: center;
+}
+
+.menuItem {
+    width: 320px;
+}
+
+
+/*------------------------------------ DETAIL PAGE --------------------------------------*/
+
+
+.mainImage {
+    border: 2px solid black;
+    box-sizing: border-box;
+    display:block;
+    margin: auto;
+}
+
+#customizeText {
+    width: 300px;
+    line-break: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#addToCartButton {
+    padding: 5px 40px 5px 40px;
+    border: 2px solid black;
+    float: right;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#totalPrice {
+    padding: 7px 0px 7px 0px;
+    float: left;
+    font-weight: bold;
+}
+
+select {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#productDetailPriceTotal {
+    margin-top: 80px;
+}
+
+#glazingDropDown {
+    margin-top: 80px;
+}
+
+#packSizeDropDown {
+    margin-top: 50px;
+}
+
+
+/*------------ LAYOUT WITH FLEX BOX ------------*/
+
+.productDetailFlexbox {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+}
+
+.productDetailOptions {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 70px;
+}
+
+
+/*------------------------------------ CART PAGE --------------------------------------*/
+
+span {
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.finalItemImage {
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.removeItem {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cartTotalPrice {
+    font-size: 28px;
+    text-align: center;
+}
+
+#checkoutButton {
+    padding: 5px 40px 5px 40px;
+    border: 2px solid black;
+    display: table;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+/*------------ LAYOUT WITH FLEX BOX ------------*/
+
+.mainCartFlexBox {
+    margin-left: 440px;
+}
+
+.cartItem {
+    display: flex;
+}
+
+#cartItemLast {
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+#cartTotalLine {
+    display: flex;
+}
+
+.cartItemDetails {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.cartItemPrice {
+    margin-right: 50px;
+}
+
+#cartTotalLabel {
+    margin-left: 120px;
+    flex-grow: 1;
+}
+
+#checkoutButtonLine {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+
+
+
+
+
