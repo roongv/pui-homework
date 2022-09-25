@@ -1,3 +1,3 @@
-Deployed website: https://roongv.github.io/pui-homework/solution-hw1/ 
+Deployed website: https://roongv.github.io/pui-homework/
 
 Repository link: https://github.com/roongv/pui-homework.git
