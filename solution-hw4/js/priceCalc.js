@@ -69,21 +69,21 @@ for (let i = 0; i < packOptions.length; i++) {
 
 //------------------------- COMPUTE AND DISPLAY PRICES ----------------------------//
 
-let glazingForCompute = glazingOptions[0].price;
-let packForCompute = packOptions[0].multiplier;
+let glazingForCompute = glazingOptions[0];
+let packForCompute = packOptions[0];
 let finalPrice;
 
 
 function onSelectGlazingChange() {
     let glazingIndex = this.value;
-    glazingForCompute = glazingOptions[glazingIndex].price;
+    glazingForCompute = glazingOptions[glazingIndex];
     computePrice();
     displayPrice();
 }
 
 function onSelectPackChange() {
     let packIndex = this.value;
-    packForCompute = packOptions[packIndex].multiplier;
+    packForCompute = packOptions[packIndex];
     computePrice();
     displayPrice();
 }
@@ -93,7 +93,7 @@ selectPack.addEventListener('change', onSelectPackChange);
 
 
 function computePrice() {
-    finalPrice = (rollPrice + glazingForCompute) * packForCompute;
+    finalPrice = (rollPrice + glazingForCompute.price) * packForCompute.multiplier;
 }
 
 
