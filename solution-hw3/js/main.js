@@ -28,11 +28,11 @@ let packOptions = [
     },
     { 
         name: "6",
-        multiplier: 6,
+        multiplier: 5,
     },
     { 
         name: "12",
-        multiplier: 12,
+        multiplier: 10,
     }
 ];
 
