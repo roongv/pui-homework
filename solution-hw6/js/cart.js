@@ -13,10 +13,19 @@ class Roll {
 
 
 
-//---------------Create an empty cart array---------------//
+// Create an empty cart array---------------//
 let cart = new Set();
 
-//---------Retrieve cart from local storage upon page load-------//
+
+
+
+
+//----------------------------------HW6-------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+
+// Retrieve cart from local storage upon page load-------//
+
 function retrieveFromLocalStorage() {
     const cartArrayString = localStorage.getItem('storedItems');
     const cartArray = JSON.parse(cartArrayString);
@@ -26,6 +35,14 @@ function retrieveFromLocalStorage() {
 }
 
 retrieveFromLocalStorage();
+
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+
+
+
 
 
 // Display Roll objects (with template element)--------------------//
@@ -49,6 +66,26 @@ function createElement(cartItem) {
         saveToLocalStorage();
     });
 }
+
+
+//----------------------------------HW6-------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+
+// Convert cart to JSON and save to local----------//
+function saveToLocalStorage() {
+    const cartArray = Array.from(cart);
+    const cartArrayString = JSON.stringify(cartArray);
+    localStorage.setItem('storedItems', cartArrayString);
+    console.log(cart);
+}
+
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
+
+
 
 
 // Create dictionaries for glazing and pack size options----------//
@@ -109,16 +146,6 @@ function removeItem(cartItem) {
     cartItem.element.remove();
     cart.delete(cartItem);
 }
-
-
-//-----------Convert cart to JSON and save to local----------//
-function saveToLocalStorage() {
-    const cartArray = Array.from(cart);
-    const cartArrayString = JSON.stringify(cartArray);
-    localStorage.setItem('storedItems', cartArrayString);
-    console.log(cart);
-}
-
 
 
 // Compute total price--------------------------------------------//
