@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/priceCalc.js" type="text/javascript" defer></script>
+    <script src="js/rollsData.js" type="text/javascript" defer></script>
+    <script src="js/details.js" type="text/javascript" defer></script>
+  </head>
+  
+  <body>
+
+    <!--HEADER-->
+    <div class="header">
+      <div class="logo">
+        <a class="mainLogo" href="./index.html">
+          <img src="./images/logo-01.svg" alt="Bun Bun Bakeshop logo"/>
+        </a>
+      </div>
+      <div class="overallNavBar">
+        <div class="navBar">
+          <div class="navBarButtons">
+            <a class="pages" href="./index.html">
+              <h3 class="yellowBackground">PRODUCTS</h3>
+            </a>
+          </div>
+          
+          <div class="navBarButtons">
+            <a class="pages" href="./shopping cart.html">
+              <h3 class="yellowBackgroundHover">CART</h3>
+            </a>
+          </div>
+          
+        </div>
+        <div class="navBarFooter">
+          <div>
+            <h1 id="header-element">Original cinnamon roll</h1>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--END OF HEADER-->
+
+    
+
+    <!--CONTENT-->
+    <div class="productDetailFlexbox">
+      <div class="productDetailImage">
+        <img class="mainImage" src="./images/original-cinnamon-roll.jpeg" width="600" alt="Original cinnamon roll"/>
+      </div>
+
+      <div class="productDetailOptions">
+        <div id="customizeText">
+          <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+          
+          <div id="glazingDropDown">
+            <p>Glazing:</p>
+            <select id="glazingDropDownOptions">
+              
+            </select>
+          </div>
+          
+          <div id="packSizeDropDown">
+            <p>Pack size:</p>
+            <select id="packSizeDropDownOptions">
+
+            </select>
+          </div>
+          
+
+          <div id="productDetailPriceTotal">
+            <span id="totalPrice"></span>
+            <span id="addToCartButton"><b>Add to cart</b></span>
+          </div>
+
+        
+        </div>
+      </div>  
+    </div>
+    
+      
+
+  </body>
+</html>
