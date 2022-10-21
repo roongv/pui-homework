@@ -53,7 +53,6 @@ function printToConsole() {
     addToArray();
     saveToLocalStorage();
     console.log(cart);
-    console.log('saved');
 }
 
 
@@ -79,12 +78,22 @@ function saveToLocalStorage() {
     localStorage.setItem('storedItems', cartArrayString);
 }
 
+
 //---------Retrieve cart from local storage upon page load-------//
 function retrieveFromLocalStorage() {
-    const cartArrayString = localStorage.getItem('storedItems');
-    const cartArray = JSON.parse(cartArrayString);
-    cart = cartArray;
-    console.log(cart);
+        const cartArrayString = localStorage.getItem('storedItems');
+        const cartArray = JSON.parse(cartArrayString);
+
+        if (cartArray == null) {
+            console.log(cart);
+        }
+        else {
+            cart = cartArray; 
+            console.log(cart);
+        }
 }
 
 retrieveFromLocalStorage();
+
+
+
