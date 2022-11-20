@@ -138,7 +138,6 @@ function saveToLocalStorage() {
     const cartArray = Array.from(cart);
     const cartArrayString = JSON.stringify(cartArray);
     localStorage.setItem('storedItems', cartArrayString);
-    console.log(cart);
 }
 
 //--------------------------------------------------------------------------//
