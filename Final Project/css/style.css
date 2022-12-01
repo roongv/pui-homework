@@ -98,7 +98,7 @@ h1 {
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 200px;
     line-height: 1.5;
 }
 
@@ -185,3 +185,25 @@ span {
     font-weight: bold;
 }
 
+/* TEST********************************** */
+
+.frontL {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    width: 380px;
+}
+
+.midL {
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    width: 300px;
+}
+
+.backL {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 170px;
+}
