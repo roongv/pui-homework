@@ -102,7 +102,7 @@ function updateElement(cartItem) {
 
 
 // Iterate through 4 Roll objects to update element---------------//
-
+ 
 for (let item of cartSet) {
     createElement(item);
     computeFinal();
