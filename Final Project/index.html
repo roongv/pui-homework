@@ -26,14 +26,12 @@
             </div>
             <div class="seasons">
                 Fall
-                <img src="./asset/BG Arrow.png" width="50px">
             </div>
             <div class="seasons">
                 Winter
             </div>
         </div>
 
-        <!-- <img src="./asset/Background-01.png" width="110%"> -->
         
         <div class="main-display">
             <div class="today-is">
@@ -50,12 +48,21 @@
         
     </header>
 
+    <nav>
+        <div class="nav-dot">
+            <img src="./asset/Ellipse 10.svg">
+            <img src="./asset/Ellipse 10.svg">
+            <img src="./asset/Ellipse 10.svg">
+            <img src="./asset/Ellipse 10.svg">
+        </div>
+    </nav>
+
     <div class="produce-list-element">
         <template id="produce-list-template">
             <main class="produce-list">
                 <div class="produce-item">
-                    <img class="favorite-star" src="./asset/Star-Outline.png" width="25px">
                     <span class="underline-on-hover"></span>
+                    <img class="favorite-star" src="./asset/Star-Outline.png" width="18px">
                 </div>
             </main>
         </template>
@@ -64,6 +71,7 @@
 
 
     <h3>Favorites</h3>
+    <p class="instructions">Click on produce item above 👆 to add it to this list 👇</p>
     <div class="favorite-flexbox">
         <div class="season-column">
             <div class="seasons-favorite">
@@ -79,6 +87,16 @@
                         </div>
                     </main>
                 </template>
+
+                <div class="favorite-item">
+                    <span class="starred-item-to-display">Asparagus</span>
+                    <img class="cross" src="./asset/XCross.png" width="15px">
+                </div>
+                <div class="favorite-item">
+                    <span class="starred-item-to-display">Celery</span>
+                    <img class="cross" src="./asset/XCross.png" width="15px">
+                </div>
+
             </div>
         </div>
 
@@ -88,6 +106,18 @@
             </div>
         
             <div class="summer-flexbox-element">
+                <div class="favorite-item">
+                    <span class="starred-item-to-display">Peaches</span>
+                    <img class="cross" src="./asset/XCross.png" width="15px">
+                </div>
+                <div class="favorite-item">
+                    <span class="starred-item-to-display">Corn</span>
+                    <img class="cross" src="./asset/XCross.png" width="15px">
+                </div>
+                <div class="favorite-item">
+                    <span class="starred-item-to-display">Tomatoes</span>
+                    <img class="cross" src="./asset/XCross.png" width="15px">
+                </div>
             </div>
         </div>
 
@@ -106,32 +136,90 @@
             </div>
         
             <div class="winter-flexbox">
+                <div class="favorite-item">
+                    <span class="starred-item-to-display">Grapefruit</span>
+                    <img class="cross" src="./asset/XCross.png" width="15px">
+                </div>
             </div>
         </div>
         
     </div>
 
+
+    <h3>Fall-Inspired Recipe Inspo</h3>
+    <p class="instructions">Just to get you excited for the season 👀</p>
     <div class="recipes">
-        <div class="recipe1">
-            <a href="https://carolinagelen.com/fall-squash-galette/"><img src="./asset/CarolinaGelen.jpeg" width="350px"></a>
-            <a class="recipe-link" href="https://carolinagelen.com/fall-squash-galette/">Fall Squash Galette</a>
-        </div>
         
-        <div class="recipe2">
-            <a href="https://www.alisoneroman.com/recipes/spicy-caramelized-squash-with-lemon-and-hazelnuts"><img src="./asset/AlisonRoman.jpeg" width="600px"></a>
-            <a class="recipe-link" href="https://www.alisoneroman.com/recipes/spicy-caramelized-squash-with-lemon-and-hazelnuts">Spicy Caramelized Squash with Lemon and Hazelnuts</a>
+        <div class="recipe-flex1">
+            
+            <div class="recipe1">
+                <a href="https://carolinagelen.com/fall-squash-galette/" target="_blank"><img src="./asset/CarolinaGelen.jpeg" width="360px"></a>
+                <a class="recipe-link" href="https://carolinagelen.com/fall-squash-galette/">Fall Squash Galette</a>
+            </div>
+            
+            <div class="recipe2">
+                <a href="https://www.notanothercookingshow.tv/post/honeynut-squash-risotto" target="_blank"><img src="./asset/NotAnotherCookingShow.webp" width="480px"></a>
+                <a class="recipe-link">Honeynut Squash Risotto</a>
+            </div>
+            
         </div>
 
-        <div class="recipe3">
-            <a href="https://www.notanothercookingshow.tv/post/honeynut-squash-risotto"><img src="./asset/NotAnotherCookingShow.webp" width="450px"></a>
-            <a class="recipe-link">Honeynut Squash Risotto</a>
+        <div class="receipe-flex2">
+            <div class="recipe3">
+                <a href="https://www.alisoneroman.com/recipes/spicy-caramelized-squash-with-lemon-and-hazelnuts" target="_blank"><img src="./asset/AlisonRoman.jpeg" width="550px"></a>
+                <a class="recipe-link" href="https://www.alisoneroman.com/recipes/spicy-caramelized-squash-with-lemon-and-hazelnuts">Spicy Caramelized Squash with Lemon and Hazelnuts</a>
+            </div>
+            
         </div>
+
     </div>
+
+
+    <h3 id="black">Why It Matters</h3>
+    <p class="sub-title">💃 This goes beyond fun 🕺</p>
+    <section class="benefits">
+        <div class="benefits-card">
+            <span class="benefits-number">01</span>
+            <span class="benefits-header">Simply Affordable</span>
+            <span class="benefits-content">
+                Produce in season means they are in abundance at the given time. Not only will they taste delicious, they will likely cost you less compared to eating the same produce during other seasons.
+            </span>
+        </div>
+
+        <div class="benefits-card">
+            <span class="benefits-number">02</span>
+            <span class="benefits-header">Nutritiously Diverse</span>
+            <span class="benefits-content">
+                Mixing up veggies and fruits that you consume throughout the year guarantees that you are intaking a wide range of vitamins and minerals. Variety is best when it comes to diet!
+            </span>
+        </div>
+
+        <div class="benefits-card">
+            <span class="benefits-number">03</span>
+            <span class="benefits-header">Socially Beneficial</span>
+            <span class="benefits-content">
+                Produce in season are more likely coming from local farms. Eating these veggies and fruits means you are supporting these local entities first.        
+            </span>
+        </div>
+
+        <div class="benefits-card">
+            <span class="benefits-number">04</span>
+            <span class="benefits-header">Environmentally Sustainable</span>
+            <span class="benefits-content">
+                Eating seasonally supports local farming, which automatically means less transportation, less refrigeration, less hot houses, and irradiation of produce.
+            </span>
+        </div>
+
+    </section>
+
 
     <section>
         <img src="/asset/Back - Left.svg" class="backL rellax" data-rellax-speed="-3">
         <img src="/asset/Mid - Left.svg" class="midL rellax" data-rellax-speed="-2">
         <img src="/asset/Front - Left.svg" class="frontL rellax" data-rellax-speed="3">
+        <img src="/asset/Back - Right.svg" class="backR rellax" data-rellax-speed="-3">
+        <img src="/asset/Mid - Right.svg" class="midR rellax" data-rellax-speed="-2">
+        <img src="/asset/Front - Right.svg" class="frontR rellax" data-rellax-speed="3">
     </section>
 
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
