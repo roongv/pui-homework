@@ -11,16 +11,6 @@ body {
 
 }
 
-.nav-dot {
-    display: flex;
-    position: fixed;
-    top: 50%;
-    left: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .main-title {
     font-size: 24px;
     font-weight: bolder;
@@ -125,7 +115,7 @@ h3 {
     font-size: 24px;
 }
 
-#black {
+#why {
     text-align: center;
     font-size: 24px;
     color: black;
@@ -233,7 +223,7 @@ img {
     object-fit: cover;
 }
 
-/* **********************BENEFITS CARDS********************** */
+/* ********************** BENEFITS CARDS ********************** */
 
 .benefits {
     display: flex;
@@ -271,7 +261,7 @@ img {
     color:#8c8ba4;
 }
 
-/* **********************RELLAX********************** */
+/* ********************** RELLAX ********************** */
 
 .frontL {
     position: absolute;
@@ -313,4 +303,52 @@ img {
     top: 500px;
     right: 100px;
     width: 170px;
+}
+
+
+/* ********************** NAV BAR ********************** */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.nav {
+  --nav-gap: 15px;
+  padding: var(--nav-gap);
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-item {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  margin-bottom: var(--nav-gap);
+}
+
+.nav-link:hover ~ .nav-label {
+  opacity: 1;
+}
+
+.nav-label {
+  color: #000000;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.nav-link {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: var(--nav-gap);
+  margin-left: var(--nav-gap);
+  transition: transform 0.1s;
+  width: var(--nav-gap);
+}
+
+.nav-link-selected {
+  background: #000000;
+  transform: scale(1.4);
 }

@@ -75,16 +75,6 @@ function starOnOff(produceItem) {
 }
 
 
-// function starOnOff(produceItem) {
-//     let star = produceItem.element.querySelector('.favorite-star');
-//     if (star == ) {
-//         star.src = './asset/Star-Filled.png';
-//     }
-//     else {
-//         star.src = '.asset/Star-Outline.png'
-//     }
-      
-// }
 
 function starOff(produceItem) {
     let star = produceItem.element.querySelector('.favorite-star');
@@ -128,6 +118,54 @@ function removeItem(produceItem) {
 }
 
 
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+// Vertical Nav Bar, taken from https://codepen.io/dcode-software/pen/PombjJy -----------------------------------//
+
+function activateNavigation() {
+    const sections = document.querySelectorAll(".section");
+    const navContainer = document.createElement("nav");
+    const navItems = Array.from(sections).map((section) => {
+      return `
+                      <div class="nav-item" data-for-section="${section.id}">
+                          <a href="#${section.id}" class="nav-link"></a>
+                          <span class="nav-label">${section.dataset.label}</span>
+                      </div>
+                  `;
+    });
+
+    console.log(navItems);
+  
+    navContainer.classList.add("nav");
+    navContainer.innerHTML = navItems.join("");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        document.querySelectorAll(".nav-link").forEach((navLink) => {
+          navLink.classList.remove("nav-link-selected");
+        });
+  
+        const visibleSection = entries.filter((entry) => entry.isIntersecting)[0];
+  
+        document
+          .querySelector(
+            `.nav-item[data-for-section="${visibleSection.target.id}"] .nav-link`
+          )
+          .classList.add("nav-link-selected");
+      },
+      { threshold: 0.5 }
+    );
+  
+    sections.forEach((section) => observer.observe(section));
+  
+    document.body.appendChild(navContainer);
+  }
+  
+  activateNavigation();
+  
 
 
 
