@@ -1,10 +1,4 @@
-//////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////
-// Create the main produce list ----------------------------//
-
-// Create a class for Produce -----------------------------------//
+// Create list of produce -----------------------------------//
 
 class Produce {
     constructor(type) {
@@ -12,9 +6,6 @@ class Produce {
         this.element = null;
     }
 }
-
-
-// Function to add items to the produce set -----------------------------------//
 
 const fallSet = new Set();
 
@@ -49,9 +40,6 @@ addNewProduce("Swiss Chards");
 addNewProduce("Tomatoes");
 
 
-
-// Function to add items to the Produce list -----------------------------------//
-
 function createElement(produceItem) {
     let template = document.querySelector('#produce-list-template');
     let clone = template.content.cloneNode(true);
@@ -80,13 +68,17 @@ for (let item of fallSet) {
     createElement(item);
 }
 
-
-// Function to turn the stars into yellow -----------------------------------//
-
 function starOnOff(produceItem) {
     let star = produceItem.element.querySelector('.favorite-star');
     star.src = './asset/Star-Filled.png'; 
    
+}
+
+
+
+function starOff(produceItem) {
+    let star = produceItem.element.querySelector('.favorite-star');
+    star.src = './asset/Star-Outline.png';
 }
 
 
@@ -97,7 +89,6 @@ function starOnOff(produceItem) {
 // Create favorite lists -----------------------------------//
 
 
-// Function to add items to the Produce list -----------------------------------//
 
 function createStarredElement(produceItem) {
     let template = document.querySelector('#favorite-list-template');
@@ -115,15 +106,12 @@ function createStarredElement(produceItem) {
     })
 }
 
-// Function to turn the stars into yellow -----------------------------------//
 
 function updateStarredElement(produceItem) {
     let itemTypeElement = produceItem.element.querySelector('.starred-item-to-display');
     itemTypeElement.innerText = produceItem.type;
 }
 
-
-// Function to remove items to the Produce list -----------------------------------//
 
 function removeItem(produceItem) {
     produceItem.element.remove();

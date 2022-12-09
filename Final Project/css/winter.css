@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("../asset/BG-01.png");
+    background-image: url(./asset/BG-Winter-01.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px 230px;
@@ -181,6 +181,8 @@ span {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    justify-content: end;
+    margin-bottom: 30px;
     
 }
 
@@ -194,7 +196,7 @@ span {
     align-items: center;
     justify-items: end;
     gap: 10px;
-    justify-content: end;
+    
     margin-bottom: 30px;
 }
 
@@ -377,7 +379,7 @@ html {
 
 @media screen and (max-width: 1200px) {
     body {
-        background-image: url(/asset/BG-Mobile-01.png);
+        background-image: url(/asset/BG-Mobile-winter-01.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 0px 230px;

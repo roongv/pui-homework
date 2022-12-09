@@ -25,28 +25,28 @@ function addNewProduce(type) {
     return produceItem;
 }
 
-addNewProduce("Acorn Squash");
 addNewProduce("Apples");
+addNewProduce("Avocadoes");
 addNewProduce("Beets");
-addNewProduce("Butternut Squash");
-addNewProduce("Cantaloupe");
-addNewProduce("Cauliflower");
-addNewProduce("Eggplant");
-addNewProduce("Figs");
-addNewProduce("Grapes");
-addNewProduce("Green Beans");
-addNewProduce("Lettuce");
-addNewProduce("Mangoes");
-addNewProduce("Mushrooms");
-addNewProduce("Okra");
-addNewProduce("Peppers");
-addNewProduce("Persimmons");
-addNewProduce("Pomegranates");
-addNewProduce("Pumpkins");
-addNewProduce("Spinach");
+addNewProduce("Brussels Sprouts");
+addNewProduce("Cabbage");
+addNewProduce("Celery");
+addNewProduce("Collard Greens");
+addNewProduce("Grapefruits");
+addNewProduce("Kale");
+addNewProduce("Kiwifruit");
+addNewProduce("Leeks");
+addNewProduce("Lemons");
+addNewProduce("Oranges");
+addNewProduce("Pears");
+addNewProduce("Potatoes");
+addNewProduce("Pineapples");
+addNewProduce("Pumpkin");
 addNewProduce("Sweet Potatoes");
 addNewProduce("Swiss Chards");
-addNewProduce("Tomatoes");
+addNewProduce("Turnips");
+addNewProduce("Winter Squash");
+addNewProduce("Yams");
 
 
 
@@ -90,6 +90,7 @@ function starOnOff(produceItem) {
 }
 
 
+
 //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
@@ -104,7 +105,7 @@ function createStarredElement(produceItem) {
     let clone = template.content.cloneNode(true);
     produceItem.element = clone.querySelector('.favorite-card');
 
-    const starredItemElement = document.querySelector('.fall-flexbox-element');
+    const starredItemElement = document.querySelector('.winter-flexbox-element');
     starredItemElement.append(produceItem.element);
 
     updateStarredElement(produceItem);
@@ -115,7 +116,7 @@ function createStarredElement(produceItem) {
     })
 }
 
-// Function to turn the stars into yellow -----------------------------------//
+
 
 function updateStarredElement(produceItem) {
     let itemTypeElement = produceItem.element.querySelector('.starred-item-to-display');
