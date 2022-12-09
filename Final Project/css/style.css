@@ -218,9 +218,22 @@ span {
     font-weight: bold;
 }
 
-.recipe-img {
+#recipe-img1 {
     border-radius: 50px;
     object-fit: cover;
+    width: 360px;
+}
+
+#recipe-img2 {
+    border-radius: 50px;
+    object-fit: cover;
+    width: 480px;
+}
+
+#recipe-img3 {
+    border-radius: 50px;
+    object-fit: cover;
+    width: 550px;
 }
 
 /* ********************** BENEFITS CARDS ********************** */
@@ -234,15 +247,6 @@ span {
     margin-bottom: 100px;
 }
 
-@media screen and (max-width: 1200px) {
-    .benefits {
-        flex-direction: column;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-}
 
 .benefits-card {
     display: flex;
@@ -364,4 +368,62 @@ html {
 .nav-link-selected {
   background: #000000;
   transform: scale(1.4);
+}
+
+
+/* ********************** NAV BAR ********************** */
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-image: url(/asset/BG-Mobile-01.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0px 230px;
+    
+    }
+
+    .benefits-card {
+        width: 100%;
+        gap: 30px;
+        padding: 100px;
+        border-radius: 70px;
+    }
+
+    
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 70px;
+        margin-right: 70px;
+        gap: 30px;
+    }
+
+    .recipes {
+        width: auto;
+    }
+
+    .recipe-flex1 {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .recipe2 {
+        margin-bottom: 0px;
+    }
+
+    #recipe-img1 {
+        width: 100%;
+    }
+    
+    #recipe-img2 {
+        width: 100%;
+    }
+    
+    #recipe-img3 {
+        width: 100%;
+    }
+
+  
 }
