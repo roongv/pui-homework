@@ -8,7 +8,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px 230px;
-
 }
 
 .main-title {
@@ -68,6 +67,7 @@ h1 {
     margin-right: auto;
     margin-top: 70px;
     margin-bottom: 250px;
+    background-color: #C15C37;
 }
 
 .current-season {
@@ -101,6 +101,7 @@ h1 {
     margin-right: auto;
     width: 200px;
     line-height: 1.5;
+    background-color: #C15C37;
 }
 
 .underline-on-hover:hover {
@@ -122,12 +123,26 @@ h3 {
     color: black;
 }
 
+#recipes {
+    text-align: center;
+    font-size: 24px;
+    background-color: #C15C37;
+}
+
+#favorites {
+    text-align: center;
+    font-size: 24px;
+    background-color: #C15C37;
+}
+
+
 .favorite-flexbox {
     display: flex;
     margin-top: 60px;
     justify-content: center;
     margin-bottom: 160px;
 }
+
 
 .season-column {
     width: 250px;
@@ -156,6 +171,7 @@ span {
 .instructions {
     text-align: center;
     font-size: 16px;
+    background-color: #C15C37;
 }
 
 
@@ -167,6 +183,7 @@ span {
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 160px;
+    background-color: #C15C37;
 }
 
 .recipe-flex1 {
