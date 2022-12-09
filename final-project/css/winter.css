@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("./asset/BG-Winter-01.png");
+    background-image: url("../asset/BG-Winter-01.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px 230px;
@@ -379,7 +379,7 @@ html {
 
 @media screen and (max-width: 1200px) {
     body {
-        background-image: url(/asset/BG-Mobile-winter-01.png);
+        background-image: url("../asset/BG-Mobile-winter-01.png");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 0px 230px;
