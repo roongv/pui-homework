@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    background-color: #C15C37;
 }
 
 
@@ -86,6 +87,7 @@ h1 {
 
 .in-season {
     text-align: center;
+    background-color: #C15C37;
 }
 
 .today-is {
@@ -234,6 +236,7 @@ span {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    background-color: #C15C37;
 }
 
 #recipe-img1 {

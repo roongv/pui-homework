@@ -143,7 +143,7 @@ function activateNavigation() {
     const navItems = Array.from(sections).map((section) => {
       return `
                       <div class="nav-item" data-for-section="${section.id}">
-                          <a href="#${section.id}" class="nav-link"></a>
+                          <a href="#${section.id}" class="nav-link"> </a>
                           <span class="nav-label">${section.dataset.label}</span>
                       </div>
                   `;
