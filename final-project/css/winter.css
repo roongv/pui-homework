@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    background-color:#464F75;
 }
 
 
@@ -68,6 +69,7 @@ h1 {
     margin-right: auto;
     margin-top: 70px;
     margin-bottom: 250px;
+    background-color:#464F75;
 }
 
 .current-season {
@@ -86,6 +88,7 @@ h1 {
 
 .in-season {
     text-align: center;
+    background-color:#464F75;
 }
 
 .today-is {
@@ -101,6 +104,7 @@ h1 {
     margin-right: auto;
     width: 200px;
     line-height: 1.5;
+    background-color:#464F75;
 }
 
 .underline-on-hover:hover {
@@ -121,6 +125,13 @@ h3 {
     font-size: 24px;
     color: black;
 }
+
+#recipes, #favorites {
+    text-align: center;
+    font-size: 24px;
+    background-color: #464F75;
+}
+
 
 .favorite-flexbox {
     display: flex;
@@ -156,6 +167,8 @@ span {
 .instructions {
     text-align: center;
     font-size: 16px;
+    background-color: #464F75;
+
 }
 
 
@@ -167,6 +180,8 @@ span {
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 160px;
+    background-color: #464F75;
+
 }
 
 .recipe-flex1 {
@@ -219,6 +234,8 @@ span {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    background-color: #464F75;
+
 }
 
 #recipe-img1 {
