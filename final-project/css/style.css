@@ -1,3 +1,5 @@
+/* ********************** OVERALL ********************** */
+
 * {
     font-family: sans-serif; 
     color: white;
@@ -9,6 +11,9 @@ body {
     background-size: 100%;
     background-position: 0px 230px;
 }
+
+
+/* ********************** MAIN LANDING SCREEN ********************** */
 
 .main-title {
     font-size: 24px;
@@ -95,6 +100,9 @@ h1 {
     font-weight: bold;
 }
 
+
+/* ********************** PRODUCE LIST ********************** */
+
 .produce-list {
     display: flex;
     font-size: 20px;
@@ -176,6 +184,9 @@ span {
     background-color: #C15C37;
 }
 
+
+
+/* ********************** RECIPES ********************** */
 
 .recipes {
     display: flex;
@@ -392,7 +403,7 @@ html {
 }
 
 
-/* ********************** NAV BAR ********************** */
+/* ********************** MEDIA QUERY ********************** */
 
 
 @media screen and (max-width: 1200px) {
